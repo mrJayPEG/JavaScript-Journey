@@ -33,7 +33,7 @@ console.log(test);
 
 
 //REAL-LIFE EXAMPLE
-let userColor = 'undefined'; 
+let userColor = undefined; 
 let defaultColor = 'green'
 let currentColor = userColor || defaultColor;
 
