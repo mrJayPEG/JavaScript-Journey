@@ -1,13 +1,16 @@
+////////// Tenary Operators
+
 let x = 120;
 let value = x;
 
 let type = value > 100 ? 'gold' : 'silver'
 
-// console.log(type);
+console.log(type);
 
-//Logical Operators
-//Logical AND (&&)
-//Returns true only when both operands are TRUE
+
+////////// LOGICAL OPERATORS //////////
+
+///// Logical and (&&)
 
 let highIncome = true;
 let goodCreditScore = true;
