@@ -1,4 +1,5 @@
 //Operator precedence
-let x = 2 + 3 * 4;
+let x = (2 + 3) * 4;  //20
 
-console.log(x);
+console.log(x);  
+
