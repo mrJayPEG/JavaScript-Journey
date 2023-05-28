@@ -1,6 +1,7 @@
 let role; //Lets imagine that this is the role of the current user and we want to see if this user is a guest or a moderator or admin
-
+role = 'moderator'
 switch (role) {
+
     case 'guest':
         console.log('Guest User');
         break;
@@ -12,3 +13,5 @@ switch (role) {
     default:
         console.log('Unknown User')
 }
+
+//Now role prints moderator
