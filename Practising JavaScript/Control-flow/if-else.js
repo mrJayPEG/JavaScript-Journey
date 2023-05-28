@@ -8,6 +8,7 @@ if hour is between 12pm and 6pm: Good afternoon!
 Otherwise, Good evening!
 */
 
+
 let hour = 2;
 
 if (hour >= 0 & hour < 12) {
