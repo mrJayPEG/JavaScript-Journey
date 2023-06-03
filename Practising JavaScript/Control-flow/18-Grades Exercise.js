@@ -1,4 +1,4 @@
-const marks = [85, 90, 70];
+const marks = [85, 90, 950];
 
 console.log(calculateGrade(marks));
 
