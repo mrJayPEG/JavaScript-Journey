@@ -1,20 +1,14 @@
-const playerConfigOverlasyElement = document.getElementById("config-overlay");
-const backdropElement = document.getElementById("backdrop");
-const fromElement = document.querySelector("form");
-const errorOutputElement = document.getElementById("config-errors");
+ //This is the file which executes first
 
-//Custom
-const cancelButton = document.getElementById("cancel-btn");
-//Custom ends
+ const playerConfigOverlayElement = document.getElementById('config-overlay');
+ const backdropElement = document.getElementById('backdrop');
+ 
+ const editPlayer1BtnElement = document.getElementById('edit-player-1-btn');
+ const editPlayer2BtnElement = document.getElementById('edit-player-2-btn');
+ const cancelConfigBtnELement = document.getElementById('cancel-btn');
 
-const editPlayer1btnElement = document.getElementById("edit-player-1-btn");
-const editPlayer2btnElement = document.getElementById("edit-player-2-btn");
-
-editPlayer1btnElement.addEventListener("click", openPlayerConfig);
-editPlayer2btnElement.addEventListener("click", openPlayerConfig);
-
-//Custom begins
-cancelButton.addEventListener("click", closePlayerConfig);
-//custom ends
-
-fromElement.addEventListener("submit", savePlayerConfig);
+ editPlayer1BtnElement.addEventListener('click', openPlayerConfig);
+ editPlayer2BtnElement.addEventListener('click', openPlayerConfig);
+ 
+ cancelConfigBtnELement.addEventListener('click', closePlayerConfig);
+ backdropElement.addEventListener('click', closePlayerConfig)
