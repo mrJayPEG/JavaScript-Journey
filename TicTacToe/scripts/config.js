@@ -1,4 +1,3 @@
-let editedPlayer = 0;
 
 function openPlayerConfig(event) {
     editedPlayer = +event.target.dataset.playerid;
@@ -24,5 +23,10 @@ function savePlayerConfig(event) {
         return;
     }
 
+    const updatedPlayerDataElement = document.getElementById('player-' + editedPlayer + '-data');
+    updatedPlayerDataElement.children[1].textContent = enteredPlayername;
 
+    players[editedPlayer - 1].name = enteredPlayername;
+
+    closePlayerConfig();
 }

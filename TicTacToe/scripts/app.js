@@ -1,4 +1,16 @@
  //This is the file which executes first
+ let editedPlayer = 0;
+
+const players = [
+    {
+        name: '',
+        symbol: 'X'
+    },
+    {
+        name: '',
+        symbol: 'O'
+    },
+];
 
  const playerConfigOverlayElement = document.getElementById('config-overlay');
  const backdropElement = document.getElementById('backdrop');
