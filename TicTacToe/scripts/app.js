@@ -1,5 +1,6 @@
 //This is the file which executes first
 let editedPlayer = 0;
+let activePlayer = 0;
 
 const players = [
     {
