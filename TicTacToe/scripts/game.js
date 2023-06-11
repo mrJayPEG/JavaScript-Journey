@@ -3,6 +3,7 @@ function startNewGame() {
         alert('Please set names for both players to continue!')
         return;
     }
+    activePlayerId.textContent = players[activePlayer].name;
     gameAreaElement.style.display = 'block';
 }
 
@@ -12,10 +13,12 @@ function switchPlayer() {
     } else {
         activePlayer = 0;
     }
+    activePlayerId.textContent = players[activePlayer].name;
 }
 
 function selectGameField(event) {
     event.target.textContent = players[activePlayer].symbol; //player[0]
     event.target.classList.add('disabled')
     switchPlayer();
+    
 }
