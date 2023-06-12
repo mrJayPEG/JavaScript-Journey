@@ -1,13 +1,13 @@
-//This is the file which executes first
-let editedPlayer = 0;
-let activePlayer = 0;
 const gameData = [
     [0, 0, 0],
     [0, 0, 0],
     [0, 0, 0]
 ];
 
-const players = [
+let editedPlayer = 0;
+let activePlayer = 0;
+
+const players = [                                                   
     {
         name: '',
         symbol: 'X'
