@@ -7,6 +7,7 @@ function startNewGame() {
     gameAreaElement.style.display = 'block';
 }
 
+
 function switchPlayer() {
     if (activePlayer === 0) {
         activePlayer = 1;
@@ -16,13 +17,13 @@ function switchPlayer() {
     activePlayerId.textContent = players[activePlayer].name;
 }
 
-function selectGameField(event) { 
+function selectGameField(event) {
 
-    const selectedField = event.target;    
-    const selectedColumn = selectedField.dataset.col -1;
-    const selectedRow = selectedField.dataset.row -1;
+    const selectedField = event.target;
+    const selectedColumn = selectedField.dataset.col - 1;
+    const selectedRow = selectedField.dataset.row - 1;
 
-    if (gameData[selectedRow][selectedColumn] > 0){
+    if (gameData[selectedRow][selectedColumn] > 0) {
         alert('Please select an empty box')
         return
     }
@@ -35,4 +36,30 @@ function selectGameField(event) {
     console.log(gameData);
 
     switchPlayer();
+}
+
+function checkForGameOver() {
+    if (
+        gameData[0][0] > 0 &&
+        gameData[0][0] === gameData[0][1] &&
+        gameData[0][1] === gameData[0][2]
+    ) {
+        return gameData[0][0];
+    }
+
+    if (
+        gameData[1][0] > 0 &&
+        gameData[1][0] === gameData[1][1] &&
+        gameData[1][1] === gameData[1][2]
+    ) {
+        return gameData[1][0];
+    }
+
+    if (
+        gameData[2][0] > 0 &&
+        gameData[2][0] === gameData[2][1] &&
+        gameData[2][1] === gameData[2][2]
+    ) {
+        return gameData[2][0];
+    }
 }
