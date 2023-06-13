@@ -88,14 +88,14 @@ function checkForGameOver() {
         if (
             gameData[0][i] > 0 &&
             gameData[0][i] === gameData[1][i] &&
-            gameData[0][1] === gameData[2][i]
+            gameData[1][i] === gameData[2][i]
         ) {
-            return gameData[0][i];
+            return gameData[0][i];  
         }
     }
 
 
-    //Checking diagonal from top yo bottom right
+    //Checking diagonal from top to bottom right
     if (
         gameData[0][0] > 0 &&
         gameData[0][0] === gameData[1][1] &&
@@ -116,6 +116,8 @@ function checkForGameOver() {
     if (currentRound === 9) {
         return -1;
     }
+
+    console.log(gameData);
     return 0;
 }
 
